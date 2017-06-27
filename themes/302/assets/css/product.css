@@ -1,0 +1,104 @@
+
+.product-list { clear: both; position: relative; z-index: 10; }
+.product-list .product { margin-right: 9px; margin-bottom: 10px; float: left; position: relative; z-index: 9; }
+@media only screen and (min-width: 768px) and (max-width: 1024px) { .product-list .product { margin: 0 1% 10px 0; } }
+@media only screen and (max-width: 767px) { .product-list .product { margin: 0 0 10px 0; float: none; } }
+.product-list .product .arr { display: none; text-indent: -999px; overflow: hidden; background: url('../img/icons-s23a732ad6e.png') 0 -560px no-repeat; width: 20px; height: 11px; position: absolute; left: 50%; bottom: -12px; margin-left: -5px; }
+@media only screen and (max-width: 767px) { .product-list .product .arr { bottom: -13px; } }
+.product-list .discount-banner { float: right; margin-right: 12px; }
+@media only screen and (min-width: 768px) and (max-width: 1024px) { .product-list .discount-banner { width: 48.5%; margin: 0 2% 10px 0; } }
+@media only screen and (max-width: 767px) { .product-list .discount-banner { margin: 0 0 10px; float: none; } }
+
+.product-list_i { width: 760px; }
+@media only screen and (min-width: 768px) and (max-width: 1024px) { .product-list_i { width: 102%; } }
+@media only screen and (max-width: 767px) { .product-list_i { width: auto; } }
+.product-list_i.edpack { width: auto; }
+@media only screen and (max-width: 767px) { .product-list_i.edpack { width: auto; } }
+
+.product { width: 241px; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; border: 1px solid #edf1f2; }
+@media only screen and (min-width: 768px) and (max-width: 1024px) { .product { width: 48.5%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; } }
+@media only screen and (max-width: 767px) { .product { width: auto; } }
+.product_i .product { float: none; margin: 0; }
+@media only screen and (min-width: 768px) and (max-width: 1024px) { .product_i .product { width: 100%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; } }
+.open .product .arr { display: block; }
+@media only screen and (max-width: 767px) { .product.pack-item .product__main .product__main__text .price-spec b { text-align: left; } }
+
+.product_i { float: left; width: 32%; padding: 0 0 10px; margin: 0 0 0 2%; }
+@media only screen and (min-width: 768px) and (max-width: 1024px) { .product_i { width: 33%; margin: 0 0 0 0.5%; } }
+@media only screen and (max-width: 767px) { .product_i { float: none; width: auto; margin: 0 0 10px; } }
+.product_i.open { padding: 0 0 20px; }
+.product_i:first-child { margin: 0; }
+
+.product__title { height: 30px; display: block; padding: 5px 40px 5px 5px; background: #edf1f2; position: relative; font-size: 13px; font-family: "open_sansbold", arial, sans-serif; color: #35403e; }
+.product__title-name { display: inline-block; *display: inline; *zoom: 1; vertical-align: middle; }
+
+.prod-info__title { padding-bottom: 25px; }
+.prod-info__title h1 { display: inline-block; font-size: 19px; color: #182422; line-height: 23px; }
+.prod-info__title p { display: inline-block; font-size: 12px; color: #666; line-height: 23px; padding-left: 10px; }
+.prod-info__title p span { margin-left: 5px; }
+
+.product__title__disc { position: absolute; right: 5px; top: 5px; font-size: 13px; color: #ff642b; font-family: "open_sansbold", arial, sans-serif; font-weight: 400; }
+
+.product__main { border-bottom: 1px solid #f0f0f0; padding-top: 10px; }
+
+.product__main__img { float: left; width: 125px; text-align: center; padding-bottom: 5px; }
+.product__main__img .product__img { width: 75px; max-width: 100%; margin: 0 auto 5px; }
+.product__main__img .more { display: block; font-size: 12px; color: #35403e; line-height: 14px; }
+.product__main__img .more:hover { text-decoration: underline; }
+.product__main__img .more .fa-caret-right { content: ""; color: #80d3c9; margin-right: 5px; display: inline-block; *display: inline; *zoom: 1; position: relative; top: -2px; *top: 0; *vertical-align: middle; background: url('../img/icons-s23a732ad6e.png') 0 -314px no-repeat; width: 4px; height: 6px; }
+
+.product__main__text { width: 106px; float: right; margin-right: 8px; }
+@media only screen and (max-width: 767px) { .product__main__text { width: 50%; padding: 15px 0 0 0; } }
+.product__main__text .price { border: 1px solid #edf1f2; padding: 5px 2px; color: #35403e; font-family: Arial, sans-serif; text-align: center; margin-bottom: 10px; position: relative; font-style: normal; text-transform: uppercase; display: block; font-weight: bold; font-size: 11px; line-height: 14px; }
+.currency_cad .product__main__text .price, .currency_chf .product__main__text .price, .currency_jpy .product__main__text .price, .currency_nzd .product__main__text .price { font-size: 10px; }
+.currency_mxn .product__main__text .price { font-size: 9px; }
+@media only screen and (max-width: 767px) { .currency_mxn .product__main__text .price { font-size: 12px; } }
+.product__main__text .price i { display: block; background: url('../img/icons-s23a732ad6e.png') 0 -1449px no-repeat; width: 8px; height: 16px; position: absolute; left: -10px; bottom: -14px; }
+.product__main__text .price .price__item { white-space: nowrap; }
+.product__main__text .new-price { font-size: 11px; color: #35403e; font-weight: bold; font-family: Arial, sans-serif; text-transform: uppercase; line-height: 13px; }
+.product__main__text .new-price p { display: block; font-size: 13px; line-height: 14px; text-decoration: line-through; }
+.product__main__text .price-spec strong { display: block; background: #ff642b; font-size: 11px; font-weight: bold; line-height: 16px; height: 16px; text-align: center; color: #fff; text-transform: uppercase; font-family: Arial, sans-serif; }
+.lang-it .product__main__text .price-spec strong { font-size: 10px; }
+.product__main__text .price-spec sup { font-size: 14px; color: #ff642b; font-family: "open_sansbold", arial, sans-serif; font-weight: 400; margin-right: 4px; }
+.product__main__text .price-spec b { font-size: 16px; color: #ff642b; line-height: 20px; position: relative; top: -1px; display: block; width: 105px; white-space: nowrap; overflow: hidden; }
+@media only screen and (min-width: 768px) and (max-width: 1024px) { .product__main__text .price-spec b { font-size: 17px; } }
+@media only screen and (max-width: 767px) { .product__main__text .price-spec b { display: block; text-align: center; } }
+@media only screen and (max-width: 767px) { .pack-item .product__main__text .price-spec b { text-align: left; } }
+.product__main__text .price-spec strong + em { top: 1px; text-transform: uppercase; }
+.product__main__text .price-spec em { display: block; text-align: right; font-size: 11px; color: #444; font-style: normal; line-height: 12px; position: relative; top: -4px; }
+.product__main__text .price-spec .perpill { text-align: left; font-size: 11px; color: #444; font-family: Arial, sans-serif; line-height: 13px; }
+
+.product__delivery { text-align: center; padding: 10px 0; }
+.product__delivery i { margin-left: 8px; }
+.product__delivery i:first-child { margin-left: 0; }
+
+.product__btn { margin: 0 5px 5px 5px; }
+.product__btn.btn-orange { display: block; text-align: center; width: auto; padding: 0; }
+
+.prod-more-box { position: absolute; right: 0; top: 0; width: 270px; padding: 30px 20px 20px 20px; background: #fff; border-left: 1px solid #edf1f2; border-bottom: 1px solid #edf1f2; }
+@media only screen and (max-width: 767px) { .prod-more-box { left: -1px; padding: 15px 10px 15px 10px; width: auto; } }
+.prod-more-box .img { float: left; width: 140px; }
+@media only screen and (max-width: 767px) { .prod-more-box .img { position: absolute; left: 10px; width: 120px; top: 15px; } }
+.prod-more-box .text { float: left; width: 110px; padding-left: 20px; }
+@media only screen and (max-width: 767px) { .prod-more-box .text { float: none; width: auto; margin: 0 0 0 120px; text-align: right; } }
+.prod-more-box .text .price { border: 1px solid #edf1f2; padding: 5px; color: #35403e; font-family: Arial, sans-serif; text-align: center; margin-bottom: 10px; position: relative; font-style: normal; text-transform: uppercase; display: block; font-weight: bold; font-size: 11px; line-height: 14px; }
+@media only screen and (max-width: 767px) { .prod-more-box .text .price { width: 128px; float: right; } }
+.prod-more-box .text .price i { text-indent: -999px; overflow: hidden; display: block; background: url('../img/icons-s23a732ad6e.png') 0 -1449px no-repeat; width: 8px; height: 16px; position: absolute; left: -10px; bottom: -14px; }
+.prod-more-box .text .price em { font-style: normal; font-size: 11px; line-height: 12px; text-transform: uppercase; display: block; font-weight: bold; }
+.prod-more-box .text .price strong { font-weight: bold; display: block; font-size: 13px; line-height: 14px; }
+@media only screen and (max-width: 767px) { .prod-more-box .text .price-spec { float: right; clear: both; width: 138px; } }
+.prod-more-box .text .price-spec strong { display: block; background: #ff642b; font-size: 11px; font-weight: bold; line-height: 15px; height: 15px; margin: 0 0 5px 0; text-align: center; color: #fff; text-transform: uppercase; font-family: Arial, sans-serif; }
+.prod-more-box .text .price-spec sup { font-size: 14px; color: #ff642b; font-family: "open_sansbold", arial, sans-serif; font-weight: 400; margin-right: 4px; }
+@media only screen and (min-width: 768px) and (max-width: 1024px) { .prod-more-box .text .price-spec sup { font-size: 18px; position: relative; top: 2px; } }
+@media only screen and (max-width: 767px) { .prod-more-box .text .price-spec sup { font-size: 18px; position: relative; top: 2px; } }
+.prod-more-box .text .price-spec b { font-size: 18px; color: #ff642b; line-height: 20px; position: relative; top: -3px; }
+@media only screen and (max-width: 767px) { .prod-more-box .text .price-spec b { top: 0; margin: 0 0 3px 0; } }
+.prod-more-box .text .price-spec strong + em { text-transform: uppercase; }
+.prod-more-box .text .price-spec em { display: block; text-align: right; font-size: 11px; color: #444; font-style: normal; line-height: 12px; position: relative; top: -4px; }
+.prod-more-box .text .price-spec .perpill { text-align: left; font-size: 11px; color: #444; font-family: Arial, sans-serif; line-height: 13px; }
+.prod-more-box .btns { clear: both; padding-top: 10px; }
+.prod-more-box .btns a { width: 100%; padding: 0; text-align: center; }
+
+.icon-star { display: inline-block; width: 70px; height: 10px; }
+.icon-star_four { background: url(../img/star-rating-four.png) no-repeat center; }
+.icon-star_five { background: url(../img/star-rating-five.png) no-repeat center; }
